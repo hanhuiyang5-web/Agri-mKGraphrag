@@ -24,7 +24,7 @@
 # Windows一键安装
 setup_windows.bat
 
-# 或手动安装
+# 手动安装
 pip install -r requirements.txt
 ```
 
@@ -38,7 +38,7 @@ neo4j:
   password: "your-neo4j-password"
 ```
 
-### 3. 运行演示（快速）
+### 3. 运行演示
 ```bash
 # 完整功能演示(需要API配置)
 python demo_v2.py
@@ -47,13 +47,13 @@ python demo_v2.py
 python demo_basic.py
 ```
 
-### 4. 数据导入、向量化与检索（推荐）
+### 4. 数据导入、向量化与检索
 
 系统将“数据导入(ingest)”与“检索(query)”解耦，避免每次检索都重复跑数据处理与LLM抽取。
 
 1) 准备数据与配置
 
-- 目录结构（建议）
+- 目录结构
   - 结构化: `data/raw/structured/agriculture_data.csv`
   - 文本: `data/raw/unstructured/agriculture_text.txt`
 - 在 `config/config_v2.yaml` 配置：
